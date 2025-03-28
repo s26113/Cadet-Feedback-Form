@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Indian Naval Academy - Cadets Feedback Form</h2>
+    <form action="submit-form.php" method="post">
+        <label>Academic Year: <input type="text" name="academic_year"></label>
+        <label>Semester: <input type="text" name="semester"></label>
+        <label>Date of Feedback: <input type="date" name="feedback_date"></label>
+        <label>Course/Class/Branch: <input type="text" name="course"></label>
+        <hr>
+        <h3>Course Evaluation</h3>
+        <label>Has the Teacher covered entire syllabus? <input type="text" name="syllabus_covered"></label>
+        <label>Has the Teacher covered relevant topics beyond syllabus? <input type="text" name="beyond_syllabus"></label>
+        <label>Effectiveness of Teacher (Rate 1-5):
+            <input type="number" name="effectiveness" min="1" max="5"></label>
+        <label>How do you rate the contents of the curriculum? (Rate 1-5):
+            <input type="number" name="curriculum_rating" min="1" max="5"></label>
+        <label>How do you rate lab facilities (if applicable)? (Rate 1-5):
+            <input type="number" name="lab_facility" min="1" max="5"></label>
+        <hr>
+        <h3>General Facilities</h3>
+        <label>Library Facility (Rate 1-5): <input type="number" name="library_facility" min="1" max="5"></label>
+        <label>Internet Facility (Rate 1-5): <input type="number" name="internet_facility" min="1" max="5"></label>
+        <label>Co-Curricular Activities (Rate 1-5): <input type="number" name="activities" min="1" max="5"></label>
+        <label>Any other suggestions: <textarea name="suggestions"></textarea></label>
+        <label>Name and Signature: <input type="text" name="name"></label>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
